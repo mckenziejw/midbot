@@ -19,9 +19,9 @@ loadFile('adjectives', adjectives)
 
 print(subjects)
 
-prompt_count = 200
+prompt_count = 500
 max_adjectives = 2
-max_styles = 10
+max_styles = 8
 
 adj_count = random.randint(1, max_adjectives)
 style_count = random.randint(1, max_styles)
