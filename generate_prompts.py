@@ -6,6 +6,7 @@ subjects = []
 styles = []
 adjectives = []
 aspect_ratios = ["3:2", "2:3"]
+outfile = "prompts.txt"
 
 def loadFile(filename, inarr):
     f = open(filename)
@@ -25,12 +26,10 @@ max_styles = 8
 
 adj_count = random.randint(1, max_adjectives)
 style_count = random.randint(1, max_styles)
-print(adj_count)
-print(style_count)
 subj_length = len(subjects)
 adj_length = len(adjectives)
 style_length = len(styles)
-out = open('prompts.txt', 'w')
+out = open(outfile, 'w')
 
 for _ in range(prompt_count):
     new_prompt = "a "
